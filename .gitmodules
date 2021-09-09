@@ -1,0 +1,3 @@
+[submodule "external/prog-arg-manager"]
+	path = external/prog-arg-manager
+	url = git@github.com:nkh-lab/prog-arg-manager.git
