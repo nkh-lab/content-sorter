@@ -8,9 +8,7 @@ int main(int argc, char* argv[])
 {
     nlab::Option<std::string> file{"file,f", "file to sort"};
 
-    nlab::ProgArgManager pam(argc, argv, "1.0.0");
-
-    if (pam.parce(file))
+    if (nlab::ProgArgManager(argc, argv, "1.0.0").parse(file))
     {
         if (boost::filesystem::exists(file.value))
         {
